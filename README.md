@@ -11,7 +11,13 @@ There are three folders in the files. These folders are what store the checklist
 
 
 ## Resources
-- You can download latest version of pyqt5 https://pypi.org/project/PyQt5/ 
+- You can download latest version of pyqt5: https://pypi.org/project/PyQt5/ 
 - pyqt5 documentation: https://www.riverbankcomputing.com/static/Docs/PyQt5/ 
 - Raspberry Pi GPIO python documentation: https://pythonhosted.org/RPIO/
+
+
+
+## GUI Architecture
+
+*insert diagram*
 
