@@ -1,7 +1,7 @@
 # Astronaut Wrist Interface (AWI)
 
 ## Project Overview
-
+The AWI is an electronic interface that astronauts will wear in space enviroments that provides them with relevant information.
 
 
 
