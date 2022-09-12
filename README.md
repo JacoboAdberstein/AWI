@@ -14,6 +14,7 @@ There are three folders in the files. These folders are what store the checklist
 - You can download latest version of pyqt5: https://pypi.org/project/PyQt5/ 
 - pyqt5 documentation: https://www.riverbankcomputing.com/static/Docs/PyQt5/ 
 - Raspberry Pi GPIO python documentation: https://pythonhosted.org/RPIO/
+- Github commands: https://education.github.com/git-cheat-sheet-education.pdf
 
 ## Virtual Environment
 
