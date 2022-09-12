@@ -1,0 +1,6 @@
+# This file sets up all the files or directories that should not be pushed into the git image
+
+
+# Ignores the Virtual Environment
+
+venv/
