@@ -1,17 +1,15 @@
 
-from PyQt5 import QtGui,QtTest
+import sys
+import PyQt5
+
+
+from PyQt5 import QtTest
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QVBoxLayout, QWidget,QFrame,QScrollArea,QGridLayout,QStackedWidget,QHBoxLayout,QFileDialog,QButtonGroup,QToolBar,QAction,QProgressBar
 from PyQt5 import QtCore
-from PyQt5.QtCore import pyqtSignal, QObject, QRunnable
-from PyQt5.QtGui import QIcon, QPixmap
-from functools import partial
+from PyQt5.QtCore import pyqtSignal
 
 import time
 import traceback, sys
-
-
-import sys
-import time
 
 wid = 1024
 hit = 600
@@ -53,6 +51,8 @@ class MainWindow(QMainWindow):
         lay.addWidget(self.button6,1,2)
         self.HomeButtons.setLayout(lay)
 
+
+
         self.setCentralWidget(self.central_widget)
         
         self.nav_screen = Navigate(self)
@@ -72,7 +72,7 @@ class MainWindow(QMainWindow):
         self.button.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.checklist))
         self.button2.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.nav_screen))
         self.button3.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.telemetry))
-        self.button4.clicked.connect(self.oh_no)
+        #self.button4.clicked.connect(self.oh_no)
         self.nav_screen.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.HomeButtons))
 
         button_action.triggered.connect(lambda: self.central_widget.setCurrentWidget(self.HomeButtons))
