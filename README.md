@@ -16,6 +16,8 @@ There are three folders in the files. These folders are what store the checklist
 - Raspberry Pi GPIO python documentation: https://pythonhosted.org/RPIO/
 
 ## Virtual Environment
+
+*Instructions for mac*
 In order to run the code efficiently, and avoid version issues, you will need to set up a virtual environment. As of right now, the environment should work with python version 3.9.12 and pyqt5 5.15.7
 
 Make a folder called ```venv```
