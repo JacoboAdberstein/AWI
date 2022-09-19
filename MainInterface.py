@@ -8,8 +8,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QVBo
 from PyQt5 import QtCore
 from PyQt5.QtCore import pyqtSignal
 
-import time
-import traceback, sys
+
 
 wid = 1024
 hit = 600
@@ -110,7 +109,7 @@ class Checklist(QStackedWidget):
         checkLists.addButton(button4, 2)
 
         def open_dialog_box(object):
-            pathNames = ["/Users/spidey/Documents/AWI/MissionChecklist","/Users/spidey/Documents/AWI/PressureLockChecklist","/Users/spidey/Documents/AWI/CommChecklist"]
+            pathNames = ["./AWI/Checklists/MissionChecklist","./AWI/Checklists/PressureLockChecklist","./AWI/Checklists/CommChecklist"]
             dialog = QFileDialog()
             folderindex = checkLists.id(object)
             path = pathNames[folderindex]
