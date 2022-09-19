@@ -109,7 +109,7 @@ class Checklist(QStackedWidget):
         checkLists.addButton(button4, 2)
 
         def open_dialog_box(object):
-            pathNames = ["./AWI/Checklists/MissionChecklist","./AWI/Checklists/PressureLockChecklist","./AWI/Checklists/CommChecklist"]
+            pathNames = ["./Checklists/MissionChecklist","./Checklists/PressureLockChecklist","./Checklists/CommChecklist"]
             dialog = QFileDialog()
             folderindex = checkLists.id(object)
             path = pathNames[folderindex]
