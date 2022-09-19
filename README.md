@@ -14,10 +14,12 @@ There are three folders in the files. These folders are what store the checklist
 - You can download latest version of pyqt5: https://pypi.org/project/PyQt5/ 
 - pyqt5 documentation: https://www.riverbankcomputing.com/static/Docs/PyQt5/ 
 - Raspberry Pi GPIO python documentation: https://pythonhosted.org/RPIO/
+- Github commands: https://education.github.com/git-cheat-sheet-education.pdf
 
 ## Virtual Environment
 
-*Instructions for mac*
+**Instructions for mac**
+
 In order to run the code efficiently, and avoid version issues, you will need to set up a virtual environment. As of right now, the environment should work with python version 3.9.12 and pyqt5 5.15.7
 
 Make a folder called ```venv```
