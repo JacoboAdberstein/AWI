@@ -16,6 +16,23 @@ There are three folders in the files. These folders are what store the checklist
 - Raspberry Pi GPIO python documentation: https://pythonhosted.org/RPIO/
 - Github commands: https://education.github.com/git-cheat-sheet-education.pdf
 
+
+## GitHub Useful Commands
+Here are some of the useful GitHub commands that you will need to know to work together.
+
+**Create Branch:** Process to create a new branch and switch to it. Each time you do a task, you need to create a branch dedicated just for the task so that any code that you push, does not have conflicts with the rest of the team. The command to create a new branch is:
+
+``` 
+git checkout main
+git pull
+git checkout -b <username>/<ticket-name>-<something-descriptive>
+```
+
+Lets look at it in detail
+``` git checkout <branch-name>```
+is a command used to switch between branches. In the process above, we first switch to the *main* branch. From there we get the most updated version of the code with ``` git pull ```. Once we have the most updated version of the code, we can create a new branch and move to it with the third command. ``` git checkout -b <username>/<ticket-name>-<something-descriptive>```. Make sure it does not have spaces in the description part.
+
+
 ## Virtual Environment
 
 **Instructions for mac**
