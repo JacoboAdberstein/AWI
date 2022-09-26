@@ -50,8 +50,6 @@ class MainWindow(QMainWindow):
         lay.addWidget(self.button6,1,2)
         self.HomeButtons.setLayout(lay)
 
-
-
         self.setCentralWidget(self.central_widget)
         
         self.nav_screen = Navigate(self)
@@ -72,7 +70,11 @@ class MainWindow(QMainWindow):
         self.button2.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.nav_screen))
         self.button3.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.telemetry))
         #self.button4.clicked.connect(self.oh_no)
-        self.nav_screen.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.HomeButtons))
+
+        #mybutton.when_pressed = btpressed
+
+        def goHome(self):
+            self.nav_screen.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.HomeButtons))
 
         button_action.triggered.connect(lambda: self.central_widget.setCurrentWidget(self.HomeButtons))
         button_action.triggered.connect(valChange)
