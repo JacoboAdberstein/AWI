@@ -20,7 +20,8 @@ There are three folders in the files. These folders are what store the checklist
 ## GitHub Useful Commands
 Here are some of the useful GitHub commands that you will need to know to work together.
 
-**Create Branch:** Process to create a new branch and switch to it. Each time you do a task, you need to create a branch dedicated just for the task so that any code that you push, does not have conflicts with the rest of the team. The command to create a new branch is:
+### Create Branch: 
+Process to create a new branch and switch to it. Each time you do a task, you need to create a branch dedicated just for the task so that any code that you push, does not have conflicts with the rest of the team. The command to create a new branch is:
 
 ``` 
 git checkout main
@@ -31,6 +32,35 @@ git checkout -b <username>/<ticket-name>-<something-descriptive>
 Lets look at it in detail
 ``` git checkout <branch-name>```
 is a command used to switch between branches. In the process above, we first switch to the *main* branch. From there we get the most updated version of the code with ``` git pull ```. Once we have the most updated version of the code, we can create a new branch and move to it with the third command. ``` git checkout -b <username>/<ticket-name>-<something-descriptive>```. Make sure it does not have spaces in the description part.
+
+### Commit Changes:
+When you make a change in your branch, you need to commit those changes to GitHub. The commands you use to push these changes are:
+
+``` 
+git add .
+```
+
+Then if it is your first commit on a new branch you will run the following command. You then write a quick message where you explain what you did in the commit.
+``` 
+git commit -m "<ticket-name>: <message>"
+```
+
+If you had already committed before on this branch, then you can simply run the following command:
+``` 
+git commit --amend
+```
+
+Once you have committed and you have comitted, you need to push your code. If this is the first time you push code in this branch, you can follow the following command
+
+```
+git push
+```
+
+If it is not the first time within this branch that you push code, then run 
+
+```
+git push -f
+```
 
 
 ## Virtual Environment
