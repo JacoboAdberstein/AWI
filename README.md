@@ -69,3 +69,4 @@ Then write the following command to activate the virtual enviroment.
 ```
 $ ./activate
 ```
+After entering the virtual enviroment, Install python 
