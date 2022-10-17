@@ -69,4 +69,16 @@ Then write the following command to activate the virtual enviroment.
 ```
 $ ./activate
 ```
-After entering the virtual enviroment, Install python 
+Install Python in the virtual environment
+```
+pip install python
+```
+This program uses PyQt5 for its GUI applications. Install PyQt5.
+```
+pip install pyqt5
+```
+Pull from GitHub to make sure the file is udpdated.
+```
+$ git pull
+```
+
