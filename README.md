@@ -19,7 +19,7 @@ There are three folders in the files. These folders are what store the checklist
 
 ## Virtual Environment
 
-**Instructions for mac**
+### **Instructions for MAC OS**
 
 In order to run the code efficiently, and avoid version issues, you will need to set up a virtual environment. As of right now, the environment should work with python version 3.9.12 and pyqt5 5.15.7
 
@@ -47,12 +47,7 @@ pip3 install python
 pip3 install pyqt5
 ```
 
-
-## GUI Architecture
-
-*insert diagram*
-
-**Instructions for Windows**
+### **Instructions for Windows**
 
 We used Visual Studio Code as our IDE to do this project. This is how to install the virtual enviroment to run the code.
 
@@ -69,3 +64,7 @@ Then write the following command to activate the virtual enviroment.
 ```
 $ ./activate
 ```
+
+## GUI Architecture
+
+*insert diagram*
