@@ -15,6 +15,7 @@ There are three folders in the files. These folders are what store the checklist
 - pyqt5 documentation: https://www.riverbankcomputing.com/static/Docs/PyQt5/ 
 - Raspberry Pi GPIO python documentation: https://pythonhosted.org/RPIO/
 - Github commands: https://education.github.com/git-cheat-sheet-education.pdf
+- Virtual Enviroment Windows: https://code.visualstudio.com/docs/python/environments
 
 ## Virtual Environment
 
@@ -51,3 +52,20 @@ pip3 install pyqt5
 
 *insert diagram*
 
+**Instructions for Windows**
+
+We used Visual Studio Code as our IDE to do this project. This is how to install the virtual enviroment to run the code.
+
+Once you are in VSCode, write the following command in the terminal. 
+```
+$ python -m venv .venv
+```
+
+Then write the following command to get to the correct folder
+```
+$ cd .\venv\venv\bin\
+```
+Then write the following command to activate the virtual enviroment.
+```
+$ ./activate
+```
