@@ -76,6 +76,8 @@ These are some links that can help with the development.
 - [Raspberry Pi GPIO python documentation](https://pythonhosted.org/RPIO/) 
 - [GitHub commands](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Virtual Environment Windows](https://code.visualstudio.com/docs/python/environments)
+- [Accelerometer Documentation](https://docs.circuitpython.org/projects/bno055/en/latest/)
+- [Accelerometer Python Tutorial](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython)
 
 ---
 ## Virtual Environment
