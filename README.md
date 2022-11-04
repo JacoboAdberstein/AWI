@@ -39,7 +39,7 @@ These are some of the main components I utilized to develop the first prototype 
 
 As of right now, the physical integration of the components is still in development. The image below displays a potential arrangement of some of the components. 
 
-![[old4.png]]
+![old Version](readmeImages/old4.png)
 
 ## AWI Physical Assembly Guide 
 Given the current state of the development of AWI this specific section is still pending. The only physical assembly instructions available at the moment is the connection of the screen to the RP4 via the HDMI connection port, as well as a connection of the screen and Pi to a power source. As the coming weeks pass and the physical development of the Pi evolves, there will be a more detailed guide on how our version of the AWI can be assembled together.
@@ -134,8 +134,7 @@ $ ./activate
 ## GUI Architecture
 The outline below describes the overall architecture of the AWI GUI. The diagram details how some buttons are connected with the submenus and the path of each submenu. An important addition to this diagram will be the interaction of alert systems and their impact on the view that is present in the screen. These specific alerts would mainly stem from the telemetry code. 
 
-![[AWI Flow Chart(1).drawio.png]]
-
+![GUI flowchart](readmeImages/diagram.png)
 
 ---
 ## Raspberry Pi and AWI running instructions
