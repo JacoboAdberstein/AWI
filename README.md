@@ -151,3 +151,22 @@ Before you can set up the software of the Raspberry Pi, you need to hook up the 
 
 
 Once you have familiarized yourself with the AWI system and how the current iteration operates, feel free to grow it and make it your own! 
+
+---
+## Trouble shooting
+
+Screen display issues
+1. If the Pi is not showing any ouput to the screen, this could be due the HDMI input plugged into prior to the Pi being turned on. Make sure the HDMI input is plugged in first before turning on the Pi.
+2. If the screen is still not turning on, check the backside of the screen board to see if the ON switch is flipped on.
+
+Power Issues
+1. Make sure that the battery is fully charged before using the AWI.
+2. If the AWI is not turning on through the battery, use a USB-C cable to power it instead.
+
+Coding Issues
+1. If you code from your personal computer to import new code for the AWI, make sure that you are coding with Python version 3.9.12 to ensure optimal compatibilty.
+2. If PyQt5 is not working, update pip.
+3. If this doesnt work, create a virtual environment and download Python and PyQt5 on there instead.
+
+Button Issues
+1. Make sure each button wire has one wire connected to the correct GPIO pins (reference a Pi GPIO chart) and one wire connected to a ground pin as well.
