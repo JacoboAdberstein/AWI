@@ -170,9 +170,9 @@ Power Issues
 Coding Issues
 1. If you code from your personal computer to import new code for the AWI, make sure that you are coding with Python version 3.9.12 to ensure optimal compatibilty.
 2. If PyQt5 is not working, do the following.
-  a. Check to see if the PyQt5 widgets are spelled correctly in the code.
-  b. Check if they are compatibilty issues with other loaded in modules.
-  c. Try creating functions to seperate the code so the problem can be isolated.
+-Check to see if the PyQt5 widgets are spelled correctly in the code.
+-Check if they are compatibilty issues with other loaded in modules.
+-Try creating functions to seperate the code so the problem can be isolated.
 3. If this doesnt work, create a virtual environment and download Python and PyQt5 on there instead.
 4. Be sure to use the command 'git pull' to update the code if you are working through GitHub. 
 5. If a module is going to be installed, update pip.
