@@ -23,6 +23,10 @@ def temperature():
     last_val = result
     return result
 
+def calibrationPin():
+    (x,_,_) = sensor.euler
+    return x
+
 
 while True:
     print("Temperature: {} degrees C".format(sensor.temperature))
