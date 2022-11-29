@@ -78,6 +78,7 @@ These are some links that can help with the development.
 - [Virtual Environment Windows](https://code.visualstudio.com/docs/python/environments)
 - [Accelerometer Documentation](https://docs.circuitpython.org/projects/bno055/en/latest/)
 - [Accelerometer Python Tutorial](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython)
+- [PyQT Plotting Library](https://www.pythonguis.com/tutorials/plotting-pyqtgraph/)
 
 ---
 ## Virtual Environment
