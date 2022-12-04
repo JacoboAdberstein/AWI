@@ -80,6 +80,7 @@ These are some links that can help with the development.
 - [Accelerometer Python Tutorial](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython)
 - [PyQT Plotting Library](https://www.pythonguis.com/tutorials/plotting-pyqtgraph/)
 - [Distance Calculation From Accelerometer](http://web.cs.wpi.edu/~emmanuel/courses/cs528/F20/slides/papers/deepak_ganesan_pedometer.pdf)
+- [IOS PyTo Motion Library Documentation](https://pyto.readthedocs.io/en/latest/library/motion.html)
 
 ---
 ## Virtual Environment
