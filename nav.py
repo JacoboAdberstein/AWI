@@ -23,7 +23,6 @@ samples = 400
 
 #-------------------------------------- Data Collection ----------------------------------------
 for i in range(0,samples):
-    motion.start_updating()
     (x,y,z) = sensor.linear_acceleration
     (roll,pitch,yaw) = sensor.euler
     time_axis.append(i)
