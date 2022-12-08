@@ -11,6 +11,26 @@ The AWI will use an electronic screen that shall display relevant information to
 Design considerations must be made for the unique conditions of the planned area this device will be used, including radiation, thermal, and vacuum related variables that don’t normally come up during typical projects. The AWI must also conform to all NASA safety requirements, most relevant regulations can be located in the Human Integration Design Handbook (NASA-STD-3001.)
 
 ---
+# Flight Model
+From heritage we know:
+-There was a lot of glare
+-The font and contrast made it difficult to read
+-The unit needed an internal heating source to maintain operational temperatures of electronics and battery.
+-The unit interfered with some astronaut movements.
+-The seal broke and the screen lost functionality while on mission
+
+In all likelihood, the flight model AWI will be slightly bigger than an ipad in thickness when using custom electronics and integrating heating units. However, additional volume will come from the enclosure. We focused on how to use the enclosure to help retain heat emitted from the battery, CPU, and heater to ensure operational temperatures. One way was to use a double walled, vacuumed sealed enclosure. Like the coffee cups you get from the store. The vacuum between the walled prevents heat transfer from one wall to the other and then outside the system. The gap between the walls does not need to be manufactured as a vacuumed space. A vent port can be incorporated in the house to vent atmosphere and create vacuumed space. 
+
+It is important to note, the double walled and vacuumed seal housing would require the chamber containing the components to be fully pressurized. If not, a vacuum environment around the heater and components will ONLY allow heat transfer through direct contact. The constant change of depressurization within the chamber could also have a negative effect on the lifespan of the components. 
+
+The flight model prototype design can be advanced by developing thermal simulations of various aluminum and stainless steel materials. The sims can be run as double walled, vacuum sealed containers to establish a baseline for the heat retention of the materials. Aluminum is lighter but weaker than steel and may require more material to be structurally sound. Steel should be considered if using the doubled walled design for its heat retention properties. The steel can absorb heat and retain it longer than Al. The double-wall will help reduce the dissipation from the steel to the environment. The chamber housing the components should only be as large as needed. Larger volumes allow the heat to “spread” throughout the pressurized atmosphere and leads to lower internal temperatures.
+
+Insulation covering is also a means to retain heat. The research was based on the EMU suit layers which used mylar and ripstop for both insulation and debris protection. These layers will encompass the entire AWI system and also be the contact/ connection points to the EMU. Velcro can be used to secure the covering to the EMU and should also be curved to fit the suit arm.
+
+For lunar models, particular care should be taken to minimize the volumetric “footprint” when adding buttons. For this reason, I research using  piezoelectric disc to use as switch. They are much smaller than standard mechanical switches and will be easier to protect from dust and debris by fully enclosing the switched with a flexible membrane or metal. These discs create a potential difference when in tension or compression and could be used to initiate a command on the user interface. However, the change is voltage is very small , 10e-6 V or less, and would need an amplifier or highly sensitive pickup. Voltage output can be calculated using V = P*G*t, where P is the applied force, G is the material sensitivity, and t is the disc thickness. Many of the commercially available discs are 0.1mm or less in thickness.
+
+
+
 # Prototype Build
 During the semesters starting from spring 2022 and fall 2022. The AWI team has been working on a prototype that is supposed to emulate the functions of the flight unit version of the AWI project. Below are some of the materials that were utilized in the building of the prototype. These materials are all commercially available components that are relatively inexpensive. 
 
@@ -44,6 +64,16 @@ As of right now, the physical integration of the components is still in developm
 Given the current state of the development of AWI this specific section is still pending. The only physical assembly instructions available at the moment is the connection of the screen to the RP4 via the HDMI connection port, as well as a connection of the screen and Pi to a power source. As the coming weeks pass and the physical development of the Pi evolves, there will be a more detailed guide on how our version of the AWI can be assembled together.
 
 ### CAD file explanation and assembly
+CAD files can be accessed via GrabCAD and Professor Nokes has the ability to give access. If there is an issue with accessing the file contact Ryan Scott at 2059032411 (cell). The GrabCAD desktop app Workbench is going to go away as of June 1, 2023 but files will still be accessible via web browser and other software. https://blog.grabcad.com/blog/2022/08/09/a-fond-farewell-to-grabcad-workbench/
+
+The folder are organized as follows:
+-Assembly: Contains solidworks assemblies for the enclosures that include relevant parts or sub-assemblies. Sub-assemblies are most likely to be found in parts since they are parts made up of sub-parts. The most recent versions are called V3.
+-Parts: All other CAD files used to create assemblies. Some were pulled from GrabCAD libraries and are non-english. All OLD versions are contained here
+-Images: Images taken from CAD for reviews.
+-Old Drawings_Images
+
+I have found the dimensions to be fairly accurate for the screen.
+The Solidworks part for the PiSugar battery has screw holes that are not entirely accurate. They should align perfectly with the Raspberry Pi but do not.
 
 ### Raspberry Pi set up
 
