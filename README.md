@@ -64,9 +64,9 @@ Given the current state of the development of AWI this specific section is still
 ## File Overview
 Currently there is one main folder called checklists. In this specific folder, there are subfolders that correspond to specific types of checklists. The path to these checklists is important. If you change the file structure, when you run the code there will be issues finding the checklists unless you update the path inside the code. 
 
-There will be another folder called "venv". This file corresponds to the virtual environment in which the code should run when you run the code in your computer. There is a section below just about the virtual environment, this section explains in detail how it works and why it is needed. 
+There will be another folder called *"venv"*. This file corresponds to the virtual environment in which the code should run when you run the code in your computer. There is a section below just about the virtual environment, this section explains in detail how it works and why it is needed. 
 
-Finally there is a folder called *readMmeImages*, this folder houses all the images utilized for this ReadMe document.
+Finally there is a folder called *"readmeImages"*, this folder houses all the images utilized for this ReadMe document.
 
 Aside from the folders previously mentioned, there are also some important files:
 - **MainInterface.py:** This file is the main file that you run in order to boot up the AWI. This file interacts with other files and the folders needed. The main structure of the GUI is delineated in this file. This file receives the inputs from the subsystems and is in charge of displaying them.
