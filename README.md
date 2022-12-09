@@ -11,18 +11,18 @@ The AWI will use an electronic screen that shall display relevant information to
 Design considerations must be made for the unique conditions of the planned area this device will be used, including radiation, thermal, and vacuum related variables that don’t normally come up during typical projects. The AWI must also conform to all NASA safety requirements, most relevant regulations can be located in the Human Integration Design Handbook (NASA-STD-3001.)
 
 ---
-# Flight Model
+### Flight Model
 
 ![Flight Concept](readmeImages/Curved_Prototype2.JPG)
 
 Flight Model Concept CAD
 
 From heritage we know:
--There was a lot of glare
--The font and contrast made it difficult to read
--The unit needed an internal heating source to maintain operational temperatures of electronics and battery.
--The unit interfered with some astronaut movements.
--The seal broke and the screen lost functionality while on mission
+- There was a lot of glare
+- The font and contrast made it difficult to read
+- The unit needed an internal heating source to maintain operational temperatures of electronics and battery.
+- The unit interfered with some astronaut movements.
+- The seal broke and the screen lost functionality while on mission
 
 In all likelihood, the flight model AWI will be slightly bigger than an ipad in thickness when using custom electronics and integrating heating units. However, additional volume will come from the enclosure. We focused on how to use the enclosure to help retain heat emitted from the battery, CPU, and heater to ensure operational temperatures. One way was to use a double walled, vacuumed sealed enclosure. Like the coffee cups you get from the store. The vacuum between the walled prevents heat transfer from one wall to the other and then outside the system. The gap between the walls does not need to be manufactured as a vacuumed space. A vent port can be incorporated in the house to vent atmosphere and create vacuumed space. 
 
@@ -96,10 +96,10 @@ Given the current state of the development of AWI this specific section is still
 CAD files can be accessed via GrabCAD and Professor Nokes has the ability to give access. If there is an issue with accessing the file contact Ryan Scott at 2059032411 (cell). The GrabCAD desktop app Workbench is going to go away as of June 1, 2023 but files will still be accessible via web browser and other software. https://blog.grabcad.com/blog/2022/08/09/a-fond-farewell-to-grabcad-workbench/
 
 The folder are organized as follows:
--Assembly: Contains solidworks assemblies for the enclosures that include relevant parts or sub-assemblies. Sub-assemblies are most likely to be found in parts since they are parts made up of sub-parts. The most recent versions are called V3.
--Parts: All other CAD files used to create assemblies. Some were pulled from GrabCAD libraries and are non-english. All OLD versions are contained here
--Images: Images taken from CAD for reviews.
--Old Drawings_Images
+- Assembly: Contains solidworks assemblies for the enclosures that include relevant parts or sub-assemblies. Sub-assemblies are most likely to be found in parts since they are parts made up of sub-parts. The most recent versions are called V3.
+- Parts: All other CAD files used to create assemblies. Some were pulled from GrabCAD libraries and are non-english. All OLD versions are contained here
+- Images: Images taken from CAD for reviews.
+- Old Drawings_Images
 
 I have found the dimensions to be fairly accurate for the screen.
 The Solidworks part for the PiSugar battery has screw holes that are not entirely accurate. They should align perfectly with the Raspberry Pi but do not.
