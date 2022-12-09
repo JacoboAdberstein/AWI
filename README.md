@@ -32,7 +32,7 @@ The flight model prototype design can be advanced by developing thermal simulati
 
 Insulation covering is also a means to retain heat. The research was based on the EMU suit layers which used mylar and ripstop for both insulation and debris protection. These layers will encompass the entire AWI system and also be the contact/ connection points to the EMU. Velcro can be used to secure the covering to the EMU and should also be curved to fit the suit arm.
 
-![Insulated Suit](readmeImages/Cross-section-of-material-layup-used-for-fabric-for-the-arms-and-legs-of-the-spacesuit.png)
+![Insulated Suit](readmeImages/suit_layers.JPG)
 
 Suit insulation layers
 
