@@ -36,13 +36,13 @@ Suit insulation layers
 
 For lunar models, particular care should be taken to minimize the volumetric “footprint” when adding buttons. For this reason, I research using  piezoelectric disc to use as switch. They are much smaller than standard mechanical switches and will be easier to protect from dust and debris by fully enclosing the switched with a flexible membrane or metal. These discs create a potential difference when in tension or compression and could be used to initiate a command on the user interface. However, the change is voltage is very small , 10e-6 V or less, and would need an amplifier or highly sensitive pickup. Voltage output can be calculated using V = P*G*t, where P is the applied force, G is the material sensitivity, and t is the disc thickness. Many of the commercially available discs are 0.1mm or less in thickness. https://www.americanpiezo.com/product-service/custom-piezoelectric-elements/shapes-sizes.html
 
-![Piezo Disc](readmeImages/piezo.JPG)
+![Piezo Disc Size](readmeImages/piezo.JPG)
 piezo disc sizing
 
-![Piezo Disc](readmeImages/piezo2.JPG)
+![Piezo Disc Placement](readmeImages/piezo2.JPG)
 Concept CAD for button replacement
 
-![Piezo Disc](readmeImages/piezo3.JPG)
+![Piezo Disc Layout](readmeImages/piezo3.JPG)
 Concept CAD for piezo disc button build
 
 # Prototype Build
@@ -75,10 +75,10 @@ As of right now, the physical integration of the components is still in developm
 ![old Version](readmeImages/old4.png)
 Original testing prototype
 
-![New Version](readmeImages/ISS.JPG)
+![New ISS Version](readmeImages/ISS.JPG)
 Current ISS testing prototype
 
-![New Version](readmeImages/lunar1.JPG)
+![New Lunar Version](readmeImages/lunar1.JPG)
 Current Lunar testing prototype
 
 ## AWI Physical Assembly Guide 
