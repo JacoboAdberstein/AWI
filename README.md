@@ -252,3 +252,8 @@ Coding Issues
 
 Button Issues
 1. Make sure each button wire has one wire connected to the correct GPIO pins (reference a Pi GPIO chart) and one wire connected to a ground pin as well.
+
+CAD and 3d Printing issues
+1. Most models were printed on Raise3d and required special permission to print overnight. A Prusa printer was used (personal printer) and the quality was better and required less time. This may be due to the recommended settings by TIW.
+2. Allow for increased tolerances. The hinge pin connecting the flap and casing is a 3mm rod. The holes were CAD initially at 2.8 to allow a tight fit. This ended up requiring alot of sanding on the rod. I did this by inserting it into a power drill and wrapping sandpaper around it. From this, I increased the CAD hole to 3mm but this stilled required the rod to be sanded. In the end, a 3.2mm hole let the rod insert with little resistance and did not back out. 
+3. Wiring was not a large initial consideration and caused some fit problems when we began to integrate more components. Afterwards more consideration was given to the added space required to install components. With the RF, the antenna needs to extend outside the AWI to prevent signal interferance
