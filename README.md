@@ -14,6 +14,7 @@ Design considerations must be made for the unique conditions of the planned area
 # Flight Model
 
 ![Flight Concept](readmeImages/Curved_Prototype2.JPG)
+
 Flight Model Concept CAD
 
 From heritage we know:
@@ -32,17 +33,21 @@ The flight model prototype design can be advanced by developing thermal simulati
 Insulation covering is also a means to retain heat. The research was based on the EMU suit layers which used mylar and ripstop for both insulation and debris protection. These layers will encompass the entire AWI system and also be the contact/ connection points to the EMU. Velcro can be used to secure the covering to the EMU and should also be curved to fit the suit arm.
 
 ![Insulated Suit](readmeImages/Cross-section-of-material-layup-used-for-fabric-for-the-arms-and-legs-of-the-spacesuit.png)
+
 Suit insulation layers
 
 For lunar models, particular care should be taken to minimize the volumetric “footprint” when adding buttons. For this reason, I research using  piezoelectric disc to use as switch. They are much smaller than standard mechanical switches and will be easier to protect from dust and debris by fully enclosing the switched with a flexible membrane or metal. These discs create a potential difference when in tension or compression and could be used to initiate a command on the user interface. However, the change is voltage is very small , 10e-6 V or less, and would need an amplifier or highly sensitive pickup. Voltage output can be calculated using V = P*G*t, where P is the applied force, G is the material sensitivity, and t is the disc thickness. Many of the commercially available discs are 0.1mm or less in thickness. https://www.americanpiezo.com/product-service/custom-piezoelectric-elements/shapes-sizes.html
 
 ![Piezo Disc Size](readmeImages/piezo.JPG)
+
 piezo disc sizing
 
 ![Piezo Disc Placement](readmeImages/piezo2.JPG)
+
 Concept CAD for button replacement
 
 ![Piezo Disc Layout](readmeImages/piezo3.JPG)
+
 Concept CAD for piezo disc button build
 
 # Prototype Build
@@ -73,12 +78,15 @@ These are some of the main components I utilized to develop the first prototype 
 As of right now, the physical integration of the components is still in development. The image below displays a potential arrangement of some of the components. 
 
 ![old Version](readmeImages/old4.png)
+
 Original testing prototype
 
 ![New ISS Version](readmeImages/ISS.JPG)
+
 Current ISS testing prototype
 
 ![New Lunar Version](readmeImages/lunar1.JPG)
+
 Current Lunar testing prototype
 
 ## AWI Physical Assembly Guide 
