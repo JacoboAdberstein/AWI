@@ -12,6 +12,9 @@ Design considerations must be made for the unique conditions of the planned area
 
 ---
 # Flight Model
+
+![Flight Concept](readmeImages/Curved_Prototype2.JPG)
+
 From heritage we know:
 -There was a lot of glare
 -The font and contrast made it difficult to read
@@ -27,9 +30,12 @@ The flight model prototype design can be advanced by developing thermal simulati
 
 Insulation covering is also a means to retain heat. The research was based on the EMU suit layers which used mylar and ripstop for both insulation and debris protection. These layers will encompass the entire AWI system and also be the contact/ connection points to the EMU. Velcro can be used to secure the covering to the EMU and should also be curved to fit the suit arm.
 
+![Insulated Suit](readmeImages/Cross-section-of-material-layup-used-for-fabric-for-the-arms-and-legs-of-the-spacesuit.png)
+
 For lunar models, particular care should be taken to minimize the volumetric “footprint” when adding buttons. For this reason, I research using  piezoelectric disc to use as switch. They are much smaller than standard mechanical switches and will be easier to protect from dust and debris by fully enclosing the switched with a flexible membrane or metal. These discs create a potential difference when in tension or compression and could be used to initiate a command on the user interface. However, the change is voltage is very small , 10e-6 V or less, and would need an amplifier or highly sensitive pickup. Voltage output can be calculated using V = P*G*t, where P is the applied force, G is the material sensitivity, and t is the disc thickness. Many of the commercially available discs are 0.1mm or less in thickness.
-
-
+![Piezo Disc](readmeImages/piezo.JPG)
+![Piezo Disc](readmeImages/piezo2.JPG)
+![Piezo Disc](readmeImages/piezo3.JPG)
 
 # Prototype Build
 During the semesters starting from spring 2022 and fall 2022. The AWI team has been working on a prototype that is supposed to emulate the functions of the flight unit version of the AWI project. Below are some of the materials that were utilized in the building of the prototype. These materials are all commercially available components that are relatively inexpensive. 
@@ -59,6 +65,8 @@ These are some of the main components I utilized to develop the first prototype 
 As of right now, the physical integration of the components is still in development. The image below displays a potential arrangement of some of the components. 
 
 ![old Version](readmeImages/old4.png)
+![New Version](readmeImages/ISS.JPG)
+![New Version](readmeImages/lunar1.JPG)
 
 ## AWI Physical Assembly Guide 
 Given the current state of the development of AWI this specific section is still pending. The only physical assembly instructions available at the moment is the connection of the screen to the RP4 via the HDMI connection port, as well as a connection of the screen and Pi to a power source. As the coming weeks pass and the physical development of the Pi evolves, there will be a more detailed guide on how our version of the AWI can be assembled together.
