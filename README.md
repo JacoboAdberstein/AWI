@@ -107,6 +107,7 @@ The Solidworks part for the PiSugar battery has screw holes that are not entirel
 ### Raspberry Pi set up
 - If the Pi is hooked up to the battery, it will come on when you turn on the battery. 
 - If you ever need access to admin mode on pi, the username is user, the password is password. 
+- If the battery is not working, plug a USB-C cable into the Pi and it will turn on from there.
 
 ### Battery set up
 - The PiSugar 2 Pro battery is attached on the back of the Pi through 4 screws. It is hooked into the back of the Pi through GPIO pins. This means that when you turn the battery on, it will give electricity to the Pi. 
@@ -119,7 +120,10 @@ The Solidworks part for the PiSugar battery has screw holes that are not entirel
 - Run from terminal
 
 ### Radio Module set up
-- To set up the radio, go 
+- To set up the radio, navigate through the linux terminal to the RF24 folder, then Linux_examples. In this folder you will find example code for the radio transmitter and receiver for the NRF24L01. Run any of these pieces of software to start the radio or transmitter. The easiset way to controll the transmitter and receiver if you are using two Pi's is to remote desktop into them and control the software from there. This is recommended for all coding on the Pi, it makes the process much more streamlined. The NRF24L01 is a widely used product and there are plenty of tutorials online to learn how to tap into its full potential.
+
+Below is the wiring diagram to connect the GPIO pins to the NRF24L01. 
+![image](https://user-images.githubusercontent.com/112099841/206831744-44b2c219-e6df-4f45-99b7-c1e12ce4d8c4.png)
 
 
 ---
