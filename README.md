@@ -105,8 +105,13 @@ I have found the dimensions to be fairly accurate for the screen.
 The Solidworks part for the PiSugar battery has screw holes that are not entirely accurate. They should align perfectly with the Raspberry Pi but do not.
 
 ### Raspberry Pi set up
+- If the Pi is hooked up to the battery, it will come on when you turn on the battery. 
+- If you ever need access to admin mode on pi, the username is user, the password is password. 
 
 ### Battery set up
+- The PiSugar 2 Pro battery is attached on the back of the Pi through 4 screws. It is hooked into the back of the Pi through GPIO pins. This means that when you turn the battery on, it will give electricity to the Pi. 
+- There is a small switch on the side with inputs that turns on the battery. 
+- Charge the battery through the USB-C port. It will turn green when fully charged. 
 
 ### BNO055 (Inertial Measurement Unit, IMU) set up
 - include physical diagrams
@@ -114,7 +119,7 @@ The Solidworks part for the PiSugar battery has screw holes that are not entirel
 - Run from terminal
 
 ### Radio Module set up
-- include diagrams
+- To set up the radio, go 
 
 
 ---
