@@ -122,7 +122,7 @@ The Solidworks part for the PiSugar battery has screw holes that are not entirel
 ### Radio Module set up
 - To set up the radio, navigate through the linux terminal to the RF24 folder, then Linux_examples. In this folder you will find example code for the radio transmitter and receiver for the NRF24L01. Run any of these pieces of software to start the radio or transmitter. The easiset way to controll the transmitter and receiver if you are using two Pi's is to remote desktop into them and control the software from there. This is recommended for all coding on the Pi, it makes the process much more streamlined. The NRF24L01 is a widely used product and there are plenty of tutorials online to learn how to tap into its full potential.
 
-Below is the wiring diagram to connect the GPIO pins to the NRF24L01. 
+Below is the wiring diagram to connect the GPIO pins to the NRF24L01. The transistor in the image is not needed to run the device.
 ![image](https://user-images.githubusercontent.com/112099841/206831744-44b2c219-e6df-4f45-99b7-c1e12ce4d8c4.png)
 
 
