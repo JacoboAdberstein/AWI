@@ -36,7 +36,7 @@ Insulation covering is also a means to retain heat. The research was based on th
 
 Suit insulation layers
 
-For lunar models, particular care should be taken to minimize the volumetric “footprint” when adding buttons. For this reason, I research using  piezoelectric disc to use as switch. They are much smaller than standard mechanical switches and will be easier to protect from dust and debris by fully enclosing the switched with a flexible membrane or metal. These discs create a potential difference when in tension or compression and could be used to initiate a command on the user interface. However, the change is voltage is very small , 10e-6 V or less, and would need an amplifier or highly sensitive pickup. Voltage output can be calculated using V = P*G*t, where P is the applied force, G is the material sensitivity, and t is the disc thickness. Many of the commercially available discs are 0.1mm or less in thickness. https://www.americanpiezo.com/product-service/custom-piezoelectric-elements/shapes-sizes.html
+For lunar models, particular care should be taken to minimize the volumetric “footprint” when adding buttons. For this reason, I research using  piezoelectric disc to use as switch. They are much smaller than standard mechanical switches and will be easier to protect from dust and debris by fully enclosing the switched with a flexible membrane or metal. These discs create a potential difference when in tension or compression and could be used to initiate a command on the user interface. However, the change is voltage is very small , 10e-6 V or less, and would need an amplifier or highly sensitive pickup. Voltage output can be calculated using V = P*G*t, where P is the applied force, G is the material sensitivity, and t is the disc thickness. Many of the [commercially available discs](https://www.americanpiezo.com/product-service/custom-piezoelectric-elements/shapes-sizes.html) are 0.1mm or less in thickness. 
 
 ![Piezo Disc Size](readmeImages/piezo.JPG)
 
@@ -93,7 +93,7 @@ Current Lunar testing prototype
 Given the current state of the development of AWI this specific section is still pending. The only physical assembly instructions available at the moment is the connection of the screen to the RP4 via the HDMI connection port, as well as a connection of the screen and Pi to a power source. As the coming weeks pass and the physical development of the Pi evolves, there will be a more detailed guide on how our version of the AWI can be assembled together.
 
 ### CAD file explanation and assembly
-CAD files can be accessed via GrabCAD and Professor Nokes has the ability to give access. If there is an issue with accessing the file contact Ryan Scott at 2059032411 (cell). The GrabCAD desktop app Workbench is going to go away as of June 1, 2023 but files will still be accessible via web browser and other software. https://blog.grabcad.com/blog/2022/08/09/a-fond-farewell-to-grabcad-workbench/
+CAD files can be accessed via GrabCAD and Professor Nokes has the ability to give access. If there is an issue with accessing the file contact Ryan Scott at 2059032411 (cell). The GrabCAD desktop app Workbench is going to go away as of June 1, 2023 but files will still be accessible via web browser and other [software](https://blog.grabcad.com/blog/2022/08/09/a-fond-farewell-to-grabcad-workbench/). 
 
 The folder are organized as follows:
 - Assembly: Contains solidworks assemblies for the enclosures that include relevant parts or sub-assemblies. Sub-assemblies are most likely to be found in parts since they are parts made up of sub-parts. The most recent versions are called V3.
@@ -158,6 +158,29 @@ The outline below describes the overall architecture of the AWI GUI. The diagram
 
 
 ## Inertial Navigation Algorithm
+The idea is that AWI has a simple navigation system that would allow for astronauts to determine their relative orientation with respect to their base when they are exploring either the Lunar or the Mars surface. Given that there is no atmosphere and everything looks exactly the same, the Moon and Mars surface can be extremely disorienting. The final goal is for the AWI system to output a vector direction from the position of the astronaut to the base. T
+
+The main system of direction determination from the AWI system would be based in simple direction finding techniques utilizing the RF modules installed. The inertial navigation system is a back up algorithm that we developed that would be only be activated whenever the RF system loses signal. While there are already established methods for inertial navigation out there in the internet, we decided to develop ours simply for fun.
+
+The algorithm has not been fully tested, but the steps of development are layed out bellow.
+
+#### Calibration Nodes
+The inertial system we developed is based on the concept we called **calibration nodes**, these nodes are meant to create a network of traceble locations where the astronaut is relative to the base, utilizing trigonometric laws we can compute the vector transformations needed at each calibration node and how it relates to the previous node. The images below demonstrate how nodes would be applied over a large period of time walking. 
+
+
+![Path with Nodes](linedPath.png)
+
+A calibration node is "created" or "dropped on the map" if any of the next conditions are met:
+- The astronaut is in motion and he stops, a node is created
+- While the astronaut is in motion, a node is created if there is a large angle change (determined by a set threshold)
+- A node is created if the Astronaut faces the base and the RF system detects the base. 
+
+The inertial system is based on the inertial module which implements an accelerometer and a gyroscope. Utilizing the accelerometer and the gyroscope data alone to develop navigation system is not a wise idea because of the compounding errors. While in range of the RF system, each inertial based node can compare its calculated vector to the vector from the RF system in order to trim down the error margin in between calibration nodes.
+
+The image below displays the algorithm's method to determine the position of a new node relative to the base.
+
+![Algorithm](algorithm.png)
+
 
 
 ---
