@@ -115,9 +115,12 @@ The Solidworks part for the PiSugar battery has screw holes that are not entirel
 - Charge the battery through the USB-C port. It will turn green when fully charged. 
 
 ### BNO055 (Inertial Measurement Unit, IMU) set up
-- include physical diagrams
-- open I2C ports 
-- Run from terminal
+- Open I2C ports. To do this, you can navigate to the raspberry pi configuration settings and open the ports from there. Alternatively, you can run the ```raspi -config ``` command and navigate until you find where to enable the I2C ports.
+- For some reason, the BNO055 code does not run from the raspberry pi's python IDE, instead any code that involves the BNO055 needs to be run directly from the terminal
+- Wiring
+
+![wiring](readmeImages/BNO055.png)
+
 
 ### Radio Module set up
 - To set up the radio, navigate through the linux terminal to the RF24 folder, then Linux_examples. In this folder you will find example code for the radio transmitter and receiver for the NRF24L01. Run any of these pieces of software to start the radio or transmitter. The easiset way to controll the transmitter and receiver if you are using two Pi's is to remote desktop into them and control the software from there. This is recommended for all coding on the Pi, it makes the process much more streamlined. The NRF24L01 is a widely used product and there are plenty of tutorials online to learn how to tap into its full potential.
@@ -154,6 +157,15 @@ The outline below describes the overall architecture of the AWI GUI. The diagram
 
 ![GUI flowchart](readmeImages/diagram.png)
 
+These are some visual representations on how the MainInterface.py GUI is architected. The first image shows how the **stacked widget** works
+
+![stacked widget](readmeImages/stacked.png)
+
+This is how the whole new GUI under the MainInterface.py works.
+
+![stacked widget](readmeImages/GUIArch.png)
+
+
 ---
 
 
@@ -168,7 +180,7 @@ The algorithm has not been fully tested, but the steps of development are layed 
 The inertial system we developed is based on the concept we called **calibration nodes**, these nodes are meant to create a network of traceble locations where the astronaut is relative to the base, utilizing trigonometric laws we can compute the vector transformations needed at each calibration node and how it relates to the previous node. The images below demonstrate how nodes would be applied over a large period of time walking. 
 
 
-![Path with Nodes](linedPath.png)
+![Path with Nodes](readmeImages/linedPath.png)
 
 A calibration node is "created" or "dropped on the map" if any of the next conditions are met:
 - The astronaut is in motion and he stops, a node is created
@@ -179,8 +191,24 @@ The inertial system is based on the inertial module which implements an accelero
 
 The image below displays the algorithm's method to determine the position of a new node relative to the base.
 
-![Algorithm](algorithm.png)
+![Algorithm](readmeImages/algorithm.png)
 
+In this set up, the astronaut walks a known distance and faces the base, at this moment, he/she can boot up the navigation system. At this moment the "black" node seen in the image is generated. At this node, the gyroscope's "absolute yaw orientation" is zeroed out, and is represented as by the dotted black vector. This absolute vector (Z=0) is presented at each node. 
+
+At each calibration node, once movement is detected, the departure angle $\theta$ relative to the absolute orientation Z is recorded. Once the astronaut moves and reaches the new determined the calibration node, the distance M is calculated. 
+
+The first step in the direction calculation is to find distance D, for this we utilize the law of cosines
+
+$$
+  D^2 = (14.14^2) + (M^2) - 2(14.14)(M)cos(45+\theta)
+$$
+
+Once the Distance D is calculated, we can utilize the law of sines to find angle $\gamma$. With $\gamma$ obtained, the final direction angle $\psi$. With $\psi$ and D know, we can plot the calibration nodes. This can be done with each new calibration node with respect to the previous. A view of this can can be seen in the next image. 
+
+![Algorithm](readmeImages/algorithmCont.png)
+
+#### Distance M calculation
+The distance M is also determined with the accelerometer. We did this by developing a pedometer from scratch. This is a great [resource](http://web.cs.wpi.edu/~emmanuel/courses/cs528/F20/slides/papers/deepak_ganesan_pedometer.pdf) about the theory behind the step counting algorith. We utilized this as a base to develop the step counter. We took the the acceleration vectors from the accelerometer, and calculated the magnitude of the acceleration. We then ran a low pass filter on those values in order to clean the data up. Finally, we took the derivative of the clean data and counted the number of sign changes. This number of sign changes divided by 2 is equal to the number of steps taken by the astronaut. This algorithm is implemented in the nav.py file. One should note that the nav.py file was developed to be tested on an ipad along with the Pyto python app. Through this app we can test the algorithm without having to set up the raspberry pi.
 
 
 ---
